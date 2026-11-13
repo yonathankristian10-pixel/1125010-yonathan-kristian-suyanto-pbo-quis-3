@@ -31,12 +31,18 @@ public class Dataview<t> {
                 String[] fields= getFields();
                 String[] vaLues=convertToStringArray(data);
                 for (int i=0;i<fields.length;i++){
-                    System.out.println(fields[i]+";")
+                    System.out.println(fields[i]+";");
                 }
-
+            public void showinsertform(){
+                String[] fields=getFields();
+                String[] values=new String[fields.length];
+                for (int i=0;i<fields.length;i++){
+                    system.out.print("masukan "+fields[i])
+                }
+            }
         }
 
     }
 
     
-}
+    }
