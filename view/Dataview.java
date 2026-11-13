@@ -16,7 +16,7 @@ public class Dataview<t> {
             System.out.print(field+"\t");
         }
         System.out.println();
-        for (t record:records){
+        for (t record: records){
            String[] values=getValues(record);
            for (String value:values){
                System.out.print(value+"\t");
@@ -26,7 +26,16 @@ public class Dataview<t> {
     }
 
     public void printBypk(String pk){
-        
+        for (t record: records){
+            if (getPrimarykey(record).equals(pk)){
+                String[] fields= getFields();
+                String[] vaLues=convertToStringArray(data);
+                for (int i=0;i<fields.length;i++){
+                    System.out.println(fields[i]+";")
+                }
+
+        }
+
     }
 
     
